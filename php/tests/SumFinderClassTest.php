@@ -3,8 +3,6 @@
 define('__ROOT__', dirname(dirname(__FILE__)));
 require_once(__ROOT__.'/app/SumFinderClass.php');
 
-echo "1231\n";
-
 use PHPUnit\Framework\TestCase;
 
 class SumFinderClassTest extends TestCase
