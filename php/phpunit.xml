@@ -13,6 +13,7 @@
     <testsuites>
         <testsuite name="Unit">
             <file>./tests/SumFinderClassTest.php</file> 
+            <file>./tests/LongestCommonPrefixTest.php</file> 
         </testsuite>
     </testsuites>
 </phpunit>
