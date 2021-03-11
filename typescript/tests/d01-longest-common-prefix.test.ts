@@ -22,6 +22,10 @@ test("longestCommonPrefix", () => {
       in: ["1234", "123", "12343", "123", "12356"],
       expected: "123",
     },
+    {
+      in: ["1234"],
+      expected: "1234",
+    },
   ];
   l.forEach((item) => {
     expect(longestCommonPrefix(item.in)).toStrictEqual(item.expected);
