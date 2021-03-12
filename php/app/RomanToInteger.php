@@ -34,16 +34,19 @@ class RomanToInteger
 
         $sum = 0;
         $flag = 0;
+
         foreach ($romanArr as $key => $roman) {
             if ($flag) {
                 $flag = 0;
                 continue;
             }
-            if (isset($romanArr[$key+1]) && $romanArr[$key] >= $romanArr[$key+1]) {
+            if (isset($romanArr[$key+1]) && self::ROMAN_MAP[$romanArr[$key]] >= self::ROMAN_MAP[$romanArr[$key+1]]) {
                 $sum += self::ROMAN_MAP[$roman];
-            } elseif (isset($romanArr[$key+1]) && $roman[$key] < $romanArr[$key+1]) {
+            } elseif (isset($romanArr[$key+1]) && self::ROMAN_MAP[$romanArr[$key]] < self::ROMAN_MAP[$romanArr[$key+1]]) {
                 $sum = $sum + self::ROMAN_MAP[$romanArr[$key+1]] - self::ROMAN_MAP[$romanArr[$key]];
                 $flag = 1;
+            } else {
+                $sum += self::ROMAN_MAP[$roman];
             }
         }
 
