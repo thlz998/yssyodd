@@ -1,4 +1,4 @@
-#!/bin/bash
+
 # weiping@cloudtrek.cn
 # ⚠️ 这是单元测试快捷脚本，请不要修改
 # - 本脚本运行代码目录下 vendor/bin/phpunit 脚本 

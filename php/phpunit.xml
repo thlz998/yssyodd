@@ -13,7 +13,9 @@
     <testsuites>
         <testsuite name="Unit">
             <file>./tests/SumFinderClassTest.php</file> 
-            <file>./tests/LongestCommonPrefixTest.php</file> 
+            <file>./tests/LongestCommonPrefixTest.php</file>
+            <file>./tests/RomanToIntegerTest.php</file>
+            <file>./tests/ValidParenthesesTest.php</file>
         </testsuite>
     </testsuites>
 </phpunit>
