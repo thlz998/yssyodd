@@ -11,12 +11,12 @@ class ValidParenthesesTest extends TestCase
     {
         $array = [
             '()'        => true,
-//            '()[]{}'    => true,
-//            '(]'        => false,
-//            '([)]'      => false,
-//            '{[]}'      => true,
-//            '{]}'       => false,
-//            '{[]'       => false,
+            '()[]{}'    => true,
+            '(]'        => false,
+            '([)]'      => false,
+            '{[]}'      => true,
+            '{]}'       => false,
+            '{[]'       => false,
         ];
 
         $validParentheses = new ValidParentheses();

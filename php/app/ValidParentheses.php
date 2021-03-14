@@ -30,7 +30,7 @@ class ValidParentheses
 
         $ret = true;
         foreach ($parenthesesArr as $val) {
-            if (in_array($val, self::LeftMap)) {
+            if (in_array($val, array_keys(self::LeftMap))) {
                 array_push($arr, $val);
             } else {
                 $temp = array_pop($arr);
@@ -41,6 +41,9 @@ class ValidParentheses
                     break;
                 }
             }
+        }
+        if (count($arr) !== 0) {
+            return false;
         }
 
         return $ret;
